@@ -41,7 +41,8 @@ If you need further assistance in deploying, feel free to reach out to me on Dis
 ## Deployment
 
 1. Ensure you have [Node.js](https://nodejs.org/), [Git](https://git-scm.com/), and [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) installed on your machine.
-2. Clone this repository on GitHub [guide for GitHub newbs](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+2. Clone this repository on GitHub
+ - [guide for GitHub newbs](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
  - Navigate to where you cloned this repo on your computer and type the following in the terminal:
    ```bash
     npm i
