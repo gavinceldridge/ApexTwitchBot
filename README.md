@@ -66,12 +66,12 @@ If you need further assistance in deploying, feel free to reach out to me on Dis
    - On the bottom left of the Glitch website, click "Tools" -> "Terminal" and wait for the server's terminal to load.
    - Enter the following commands:
 ```bash
-  //this line installs all the necessary dependencies 
-  //you only need to run it the first time you configure the project.
+  #this line installs all the necessary dependencies 
+  #you only need to run it the first time you configure the project.
   npm i 
 
-  //this line starts the chat bot.
-  //you need to run it at the beginning of each stream
+  #this line starts the chat bot.
+  #you need to run it at the beginning of each stream
   node bot.js
 ```
 5. *Assuming you configured everything properly*, it should now be running!
