@@ -10,8 +10,6 @@ While this project is open source and free to use, if you find that it's improvi
 
 Please keep in mind this bot is still in development and may not function perfectly *yet*. Your feedback could really help!
 
-Likewise, while it's in development, it will probably be a bit complex for non-devs. It will also require you install [Node.js](https://nodejs.org/en/) and be comfortable with using the command line. 
-
 If you need further assistance in deploying, feel free to reach out to me on Discord (Shaka#6502).
 
 ## Authors
@@ -38,33 +36,49 @@ If you need further assistance in deploying, feel free to reach out to me on Dis
  - !dice
    - rolls dice from 1-6
   
+## Upcoming Features
+ - Ability to give Twitch Subscribers or Followers more than 1 vote per voting process
+ - Letting chat vote on gamemode, which weapons you should run, and which legends your teammates should play as
+ - More general customization like progress bars, announcements, etc.
+ - Making it so that chat votes using numbers instead of Legend names as that can lead to missed votes on typos or abbreviations
+   - EX: Valkyrie vs Valk vs Valkree
+   - New feature will look something more like (and allow the streamer to exclude certain legends):
+     - 1 - Bloodhound
+     - 2 - Lifeline
+     - 3 - Pathfinder
+     - ...
+
 ## Deployment
 
-1. Ensure you have [Node.js](https://nodejs.org/), [Git](https://git-scm.com/), and [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) installed on your machine.
-2. Clone this repository on GitHub
- - [guide for GitHub newbs](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
- - Navigate to where you cloned this repo on your computer and type the following in the terminal:
-   ```bash
-    npm i
-   ```
-3. Gather your API Credentials
+1. Go to (the project's deployment page on Glitch)[https://glitch.com/edit/#!/apex-legends-c?path=bot.js%3A1%3A0]
+  - Create a Glitch account and "remix" the project. 
+2. Gather your API Credentials
  - [Get your Twitch OAuth Token](https://twitchapps.com/tmi/)
  - [Get your Apex API Credentials](https://apexlegendsapi.com/documentation.php)
    - located at the top of the page, enter [this repo's URL](https://github.com/gavinceldridge/ApexTwitchBot) as the project URL and explain your use case (EX: "I want a twitch bot!")
         - Submit and copy your Apex API credentials.
-        - Add these credentials to the config.js file in the cloned repo. There are further comments in the config file explaining how and what to add.
-        - Also be sure to enter your Twitch channel name, preferred bot username, apex username, and a list of your Twitch mods usernames.
-4. Save the config.js file!
-5. Run the bot.js file by navigating to the project folder in your command line and typing in the following command:
+        - Add these credentials to the respective .env file variables in the cloned repo.
+        - Also be sure to enter your Twitch channel name, preferred bot username, apex username, and a list of your Twitch mods usernames with a space in between each of the mods usernames.
+3. Save the .env file!
+4. Run the bot
+   - On the bottom left of the Glitch website, click "Tools" -> "Terminal" and wait for the server's terminal to load.
+   - Enter the following commands:
 ```bash
+  //this line installs all the necessary dependencies 
+  //you only need to run it the first time you configure the project.
+  npm i 
+
+  //this line starts the chat bot.
+  //you need to run it at the beginning of each stream
   node bot.js
 ```
-6. *Assuming you configured everything properly*, it should now be running!
+5. *Assuming you configured everything properly*, it should now be running!
 
 
-## APIs
+## APIs and Tooling
  - [Apex API Docs](https://apexlegendsapi.com/)
  - [Twitch Chat Bot Docs](https://dev.twitch.tv/docs/)
+ - [Glitch Servers](https://glitch.com/)
 
 ## Contributing
 
