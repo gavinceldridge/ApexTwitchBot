@@ -1,6 +1,8 @@
 
 # Twitch Apex Chat Bot 
 
+### Please "Star" this repo to help it gain momentum!
+
 This is an open-source (free code) project for Twitch streamers! 
 It will be updated regularly so keep your eyes peeled for new features.
 
