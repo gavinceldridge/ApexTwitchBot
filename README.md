@@ -58,7 +58,7 @@ If you need further assistance in deploying, feel free to reach out to me on Dis
    - located at the top of the page, enter [this repo's URL](https://github.com/gavinceldridge/ApexTwitchBot) as the project URL and explain your use case (EX: "I want a twitch bot!")
         - Submit and copy your Apex API credentials.
         - Add these credentials to the respective .env file variables in the cloned repo.
-        - Also be sure to enter your Twitch channel name, preferred bot username, apex username, and a list of your Twitch mods usernames with a space in between each of the mods usernames.
+        - Also be sure to enter your Twitch channel name, preferred bot username, apex username, and a list of your Twitch mods usernames with a space in between each of the mods usernames (all in lowercase).
 3. Save the .env file!
 4. Run the bot
    - On the bottom left of the Glitch website, click "Tools" -> "Terminal" and wait for the server's terminal to load.
