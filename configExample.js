@@ -8,7 +8,7 @@ You will need to:
     and fill in all the required info
 
 */
-const api = "exampleAPI"; //
+const apexApi = "exampleAPI"; //
 const botUsername = "exampleBotUsername";
 const channelName = "exampleChannelName";
 const mods = [
