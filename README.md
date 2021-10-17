@@ -1,7 +1,7 @@
 
 # Twitch Apex Chat Bot 
 
-[image](https://www.dexerto.com/wp-content/uploads/2021/09/06/Apex-Legends-Twitch-Top-10.jpg)
+![image](https://www.dexerto.com/wp-content/uploads/2021/09/06/Apex-Legends-Twitch-Top-10.jpg)
 
 ### Please "Star" this repo to help it gain momentum!
 
