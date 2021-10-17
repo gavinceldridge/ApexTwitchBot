@@ -6,7 +6,7 @@
 This is an open-source (free code) project for Twitch streamers! 
 It will be updated regularly so keep your eyes peeled for new features.
 
-While this project is open source and free to use, if you find that it's improving your streaming, please consider donating whatever you can afford to keep this project improving! My paypal email is gchacka@gmail.com :)
+While this project is open source and free to use, if you find that it's improving your streaming experience, please consider donating to keep this project improving! My paypal email is gchacka@gmail.com :)
 
 Please keep in mind this bot is still in development and may not function perfectly *yet*. Your feedback could really help!
 
