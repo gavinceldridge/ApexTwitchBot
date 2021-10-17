@@ -40,20 +40,25 @@ If you need further assistance in deploying, feel free to reach out to me on Dis
   
 ## Deployment
 
-1. Clone this repository on GitHub
-2. Gather your API Credentials
+1. Ensure you have Node.js, Git, and NPM installed on your machine.
+2. Clone this repository on GitHub
+ - Navigate to where you cloned this repo on your computer and type the following in the terminal:
+   ```bash
+    npm i
+   ```
+3. Gather your API Credentials
  - [Get your Twitch OAuth Token](https://twitchapps.com/tmi/)
  - [Get your Apex API Credentials](https://apexlegendsapi.com/documentation.php)
    - located at the top of the page, enter [this repo's URL](https://github.com/gavinceldridge/ApexTwitchBot) as the project URL and explain your use case (EX: "I want a twitch bot!")
         - Submit and copy your Apex API credentials.
         - Add these credentials to the config.js file in the cloned repo. There are further comments in the config file explaining how and what to add.
         - Also be sure to enter your Twitch channel name, preferred bot username, apex username, and a list of your Twitch mods usernames.
-3. Save the config.js file!
-4. Run the bot.js file by navigating to the project folder in your command line and typing in the following command:
+4. Save the config.js file!
+5. Run the bot.js file by navigating to the project folder in your command line and typing in the following command:
 ```bash
   node bot.js
 ```
-5. *Assuming you configured everything properly*, it should now be running!
+6. *Assuming you configured everything properly*, it should now be running!
   
 ## Contributing
 
