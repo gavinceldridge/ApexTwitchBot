@@ -60,7 +60,12 @@ If you need further assistance in deploying, feel free to reach out to me on Dis
   node bot.js
 ```
 6. *Assuming you configured everything properly*, it should now be running!
-  
+
+
+## APIs
+ - [Apex API Docs](https://apexlegendsapi.com/)
+ - [Twitch Chat Bot Docs](https://dev.twitch.tv/docs/)
+
 ## Contributing
 
 Contributions are always welcome!
