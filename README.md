@@ -52,7 +52,7 @@ If you need further assistance in deploying, feel free to reach out to me on Dis
 
 ## Deployment
 
-1. Go to (the project's deployment page on Glitch)[https://glitch.com/edit/#!/apex-legends-c?path=bot.js%3A1%3A0]
+1. Go to (the project's deployment page on (Glitch)[https://glitch.com/edit/#!/apex-legends-c?path=bot.js%3A1%3A0]
   - Create a Glitch account and "remix" the project. 
 2. Gather your API Credentials
  - [Get your Twitch OAuth Token](https://twitchapps.com/tmi/)
