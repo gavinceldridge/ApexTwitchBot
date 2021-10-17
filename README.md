@@ -10,7 +10,7 @@ While this project is open source and free to use, if you find that it's improvi
 
 Please keep in mind this bot is still in development and may not function perfectly *yet*. Your feedback could really help!
 
-Likewise, while it's in development, it will probably be a bit complex for non-devs. It will also require you install [Node.js]("https://nodejs.org/en/") https://nodejs.org/en/ and be comfortable with using the command line. 
+Likewise, while it's in development, it will probably be a bit complex for non-devs. It will also require you install [Node.js](https://nodejs.org/en/) https://nodejs.org/en/ and be comfortable with using the command line. 
 
 If you need further assistance in deploying, feel free to reach out to me on Discord (Shaka#6502).
 
@@ -42,9 +42,9 @@ If you need further assistance in deploying, feel free to reach out to me on Dis
 
 1. Clone this repository on GitHub
 2. Gather your API Credentials
- - [Get your Twitch OAuth Token]("https://twitchapps.com/tmi/") https://twitchapps.com/tmi/
- - [Get your Apex API Credentials]("https://apexlegendsapi.com/documentation.php") https://apexlegendsapi.com/documentation.php
-   - located at the top of the page, enter [this repo's URL]("https://github.com/gavinceldridge/ApexTwitchBot") https://github.com/gavinceldridge/ApexTwitchBot as the project URL and explain your use case (EX: "I want a twitch bot!")
+ - [Get your Twitch OAuth Token](https://twitchapps.com/tmi/) https://twitchapps.com/tmi/
+ - [Get your Apex API Credentials](https://apexlegendsapi.com/documentation.php) https://apexlegendsapi.com/documentation.php
+   - located at the top of the page, enter [this repo's URL](https://github.com/gavinceldridge/ApexTwitchBot) https://github.com/gavinceldridge/ApexTwitchBot as the project URL and explain your use case (EX: "I want a twitch bot!")
         - Submit and copy your Apex API credentials.
         - Add these credentials to the config.js file in the cloned repo. There are further comments in the config file explaining how and what to add.
         - Also be sure to enter your Twitch channel name, preferred bot username, apex username, and a list of your Twitch mods usernames.
