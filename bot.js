@@ -38,7 +38,7 @@ client.connect();
 
 let votes = {};
 let voting = false;
-const voters = {};
+let voters = {};
 
 let interval;
 let timeout = 300;
