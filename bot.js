@@ -175,7 +175,7 @@ function onMessageHandler(target, context, msg, self) {
             client.say(target, "YOU ARE NOT AUTHORIZED TO DO THIS!!!");
         }
     }else if (commandName === "!vote") {
-        for(let i = 0; i<legend.length; i++){
+        for(let i = 0; i<legendOptions.length; i++){
             client.say(target, `${i+1}: ${legendOptions[i]}`);
         }
     } else if (commandName.includes("!vote")) {
