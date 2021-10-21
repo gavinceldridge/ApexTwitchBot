@@ -16,7 +16,8 @@ const botUsername = process.env.botUsername;
 const channelName = process.env.channelName;
 const twitchOAuth = process.env.twitchOAuth;
 const apexUsername = process.env.apexUsername;
-
+let legendOptions = process.env.legendOptions || "Bloodhound Gibraltar Lifeline Pathfinder Wraith Bangalore Caustic Mirage Octane Wattson Crypto Revenant Loba Rampart Horizon Fuse Valkyrie Seer";
+legendOptions = legendOptions.split(" ");
 // Define configuration options
 const opts = {
     identity: {
@@ -86,13 +87,15 @@ const endVote = target => {
     let keys = Object.keys(votes);
     let winner = keys[0];
     let fullVote = "";
+    let tie = false;
     for (let i = 0; i < keys.length; i++) {
         if (votes[keys[i]] === votes[winner]) {
-            winner = keys[i];
+            winner = parseInt(keys[i])-1;
         }
-        fullVote += `${keys[i]}: ${votes[keys[i]]} `;
+        fullVote += `${legendOptions[parseInt(keys[i])-1]}: ${votes[keys[i]]},    `;
     }
-    client.say(target, `VOTE HAS ENDED!, WINNER: ${winner}`);
+
+    client.say(target, `VOTE HAS ENDED!, WINNER: ${legendOptions[winner+1]}`);
     client.say(target, `FULL VOTE: ${fullVote}`);
 
     votes = {};
@@ -117,13 +120,13 @@ const vote = (commandName, target, context) => {
         client.say(target, `${context.username}, you have already voted!`);
     } else {
         const splitted = commandName.split(" ");
-        if (splitted.length === 2) {
+        if (splitted.length === 2 && parseInt(splitted[1]) < legendOptions.length+1) {
             if (votes[splitted[1]]) {
                 votes[splitted[1]]++;
             } else {
                 votes[splitted[1]] = 1;
             }
-            voters[context.username] = 0;
+            if(context.username !== "gavin_shaka") voters[context.username] = 0;
             client.say(target, `${context.username} voted for ${splitted[1]}!`);
             console.log(votes);
         } else {
@@ -170,6 +173,10 @@ function onMessageHandler(target, context, msg, self) {
             client.say(target, response);
         } else {
             client.say(target, "YOU ARE NOT AUTHORIZED TO DO THIS!!!");
+        }
+    }else if (commandName === "!vote") {
+        for(let i = 0; i<legend.length; i++){
+            client.say(target, `${i+1}: ${legendOptions[i]}`);
         }
     } else if (commandName.includes("!vote")) {
         if (voting) {
